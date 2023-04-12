@@ -1,5 +1,6 @@
-function shiftletter(value,index){
-    let out=1;    
+//inner function for new char calculation
+
+function shiftletter(value,index){    
     
     if(value>64 && value<91){
         if(index+value<91){
@@ -36,5 +37,5 @@ function caesarCipher(parameterString,shiftF) {
         
     }    
     return output;
-  }
+}
 module.exports = caesarCipher;
