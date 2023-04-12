@@ -6,11 +6,23 @@ const calculator = function() {
     function substract(x,y){
         return x-y;
     }
+    function divide(x,y){
+        if(y==0){
+            return "ERROR"
+        }
+        else{
+            return (x/y);             
+        }        
+    }
+    function multiply(x,y){        
+        return x*y;
+    }
 
     return {
         add,
-        substract
-
+        substract,
+        divide,
+        multiply
     };
   }
 module.exports = calculator;
